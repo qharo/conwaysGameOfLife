@@ -7,9 +7,9 @@ function getId(x, y){
 let mouseDown = false, started=false;
 let blox = []
 let env = document.getElementById("env")
-for(let x = 0; x < 25; x++){
+for(let x = 0; x < 30; x++){
     let row = []
-    for(let y = 0; y < 40; y++){
+    for(let y = 0; y < 50; y++){
         let node = document.createElement('button')
         node.id = getId(x, y);
         node.style.backgroundColor = 'white'
@@ -50,9 +50,9 @@ function clearIt(){
 function redraw(){
     let newBlox = []
 
-    for(let x = 0; x < 25; x++){
+    for(let x = 0; x < 30; x++){
         let newRow = []
-        for(let y  = 0; y < 40; y++){
+        for(let y  = 0; y < 50; y++){
             newStat = alive(x, y)
             newRow.push(newStat)
         }
@@ -63,8 +63,8 @@ function redraw(){
 }
 
 function write(blox){
-    for(let x = 0; x < 25; x++){
-        for(let y = 0; y < 40; y++){
+    for(let x = 0; x < 30; x++){
+        for(let y = 0; y < 50; y++){
             let node = document.getElementById(getId(x, y))
             if(blox[x][y])
                 node.style.backgroundColor = 'black'
