@@ -1,4 +1,4 @@
-# ConwaysGameOfLife
+# Conways Game Of Life
 
 This repository contains a JavaScript implementation of Conway's Game of Life, a cellular automaton devised by John Conway. It showcases how cells evolve across a grid based on simple rules.
 
